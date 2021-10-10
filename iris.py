@@ -15,7 +15,7 @@ print("Type of target: {}".format(type(iris_dataset['target'])))
 print("Shape of target: {}".format(iris_dataset['target'].shape))
 print("Target:\n{}".format(iris_dataset['target']))
 
-################################################################
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state=1)
 
 print("X_train shape: {}".format(X_train.shape))
 print("y_train shape: {}".format(y_train.shape))
